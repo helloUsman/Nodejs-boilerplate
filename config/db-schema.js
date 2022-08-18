@@ -19,28 +19,28 @@
 //     -- Table structure for table `users`
 //     --
 // ​
-// DROP TABLE IF EXISTS `users`;
+DROP TABLE IF EXISTS `users`;
 // /*!40101 SET @saved_cs_client     = @@character_set_client */;
 // /*!40101 SET character_set_client = utf8 */;
-// CREATE TABLE `users` (
-//     `id` int(11) NOT NULL AUTO_INCREMENT,
-//     `first_name` varchar(50) NOT NULL,
-//     `last_name` varchar(50) NOT NULL,
-//     `full_name` varchar(80) DEFAULT NULL,
-//     `username` varchar(90) NOT NULL,
-//     `email` varchar(200) NOT NULL,
-//     `phone` varchar(200) NOT NULL,
-//     `password` varchar(400) DEFAULT NULL,
-//     `image` varchar(300) DEFAULT NULL,
-//     `birth_date` date DEFAULT NULL,
-//     `type` enum('user','admin') NOT NULL,
-//     `email_verified` enum('0','1') DEFAULT '0',
-//     `cell_verified` enum('0','1') DEFAULT '1',
-//     `created_at` datetime DEFAULT NULL,
-//     PRIMARY KEY (`id`),
-//     UNIQUE KEY `email_UNIQUE` (`email`),
-//     UNIQUE KEY `phone_UNIQUE` (`phone`)
-// ) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=latin1;
+CREATE TABLE `users` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    `first_name` varchar(50) NOT NULL,
+    `last_name` varchar(50) NOT NULL,
+    `full_name` varchar(80) DEFAULT NULL,
+    `username` varchar(90) NOT NULL,
+    `email` varchar(200) NOT NULL,
+    `phone` varchar(200) NOT NULL,
+    `password` varchar(400) DEFAULT NULL,
+    `image` varchar(300) DEFAULT NULL,
+    `birth_date` date DEFAULT NULL,
+    `type` enum('user','admin') NOT NULL,
+    `email_verified` enum('0','1') DEFAULT '0',
+    `cell_verified` enum('0','1') DEFAULT '1',
+    `created_at` datetime DEFAULT NULL,
+    PRIMARY KEY (`id`),
+    UNIQUE KEY `email_UNIQUE` (`email`),
+    UNIQUE KEY `phone_UNIQUE` (`phone`)
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=latin1;
 // /*!40101 SET character_set_client = @saved_cs_client */;
 // ​
 // --
